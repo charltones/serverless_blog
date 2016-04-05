@@ -1,0 +1,11 @@
+/* app css stylesheet */
+
+
+.custom{background:#eee; height:80px; padding:12px;margin-bottom:4px}
+
+.text{
+  margin-left: 60px;
+  overflow: hidden;
+  }
+
+.cust-margin{margin-top:4px;margin-bottom:4px}

@@ -1,0 +1,29 @@
+
+<form name="blogForm" class="form-horizontal" role="form" ng-submit="blog()">
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="entry.name" class="form-control" id="name" placeholder="your name" required/>
+    </div>
+    <label for="blog" class="col-sm-2 control-label">Message</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="entry.sblog" class="form-control" id="sblog" placeholder="something to say?" required/>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" class="btn btn-primary" value="SBlog It!" ng-disabled="blogForm.$invalid || loading"/>
+    </div>
+  </div>
+</form>
+
+<div class="container">
+  <div ng-repeat="entry in sblogs | orderBy:'-timestamp'" class="row">
+    <div class="col-sm-6 custom">
+      <i class="fa fa-comment-o fa-3x pull-left"></i>
+      <div class="sblog">
+	<h6 class="cust-margin">{{(entry.timestamp*1000) | date:'medium'}} - {{entry.name}}</h6>
+	{{entry.sblog}}
+      </div>
+    </div>
+</div>

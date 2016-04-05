@@ -1,0 +1,19 @@
+{
+  "name": "Serverless Blog",
+  "description": "A serverless blog example",
+  "version": "0.0.0",
+  "homepage": "https://github.com/charltones/serverless_blog",
+  "license": "Apache",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-resource": "1.4.x",
+    "angular-route": "~1.4.0",
+    "angular-loader": "~1.4.0",
+    "angular-mocks": "~1.4.0",
+    "angular-bootstrap": "",
+    "bootstrap": "~3.3.0",
+    "fontawesome": "",
+    "html5-boilerplate": "~5.2.0"
+  }
+}
