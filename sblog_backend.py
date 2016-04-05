@@ -50,7 +50,7 @@ if __name__=='__main__':
     else:
         name = ""
         sblog = ""
-    boto3.setup_default_session(profile_name='vertu-ec2', region_name='eu-west-1')
+    #boto3.setup_default_session(profile_name='<your AWS profile if needed>', region_name='eu-west-1')
     # Test outside of Lambda
     event = {'operation': operation, 
              'name': name,
